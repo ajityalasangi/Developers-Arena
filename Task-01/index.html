@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClinicCare • Quality Healthcare</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="doctors.html">Doctors</a>
+                <a href="departments.html">Departments</a>
+                <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <div class="eyebrow">Your Health First</div>
+                    <h1 class="display">Compassionate, Modern Healthcare</h1>
+                    <p class="lead">Advanced medical services with a patient‑centered approach. Same‑day appointments and 24/7 emergency support.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>25+</h3>
+                            <p class="muted">Specialists</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15k</h3>
+                            <p class="muted">Patients/year</p>
+                        </div>
+                        <div class="stat">
+                            <h3>98%</h3>
+                            <p class="muted">Satisfaction</p>
+                        </div>
+                    </div>
+                    <p><a href="appointment.html" class="btn btn-primary">Book an Appointment</a></p>
+                </div>
+                <div class="card pad shadow-lg">
+                    <h2>Quick Appointment</h2>
+                    <form id="appointment-form">
+                        <div class="field"><label>Name</label><input name="name" data-validate placeholder="Jane Doe" /><div class="error"></div></div>
+                        <div class="field"><label>Email</label><input name="email" data-validate type="email" placeholder="you@example.com" /><div class="error"></div></div>
+                        <div class="field"><label>Department</label>
+                            <select name="dept" data-validate>
+                                <option value="">Select...</option>
+                                <option>Pediatrics</option>
+                                <option>Dentistry</option>
+                                <option>Orthopedics</option>
+                                <option>Cardiology</option>
+                            </select>
+                            <div class="error"></div>
+                        </div>
+                        <div class="field"><label>Date</label><input name="date" data-validate type="date" /><div class="error"></div></div>
+                        <p><button class="btn btn-primary" type="submit">Request</button></p>
+                        <div class="form-status success" aria-live="polite"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services preview -->
+        <section class="section">
+            <div class="container">
+                <h2>Core Services</h2>
+                <div class="grid grid-auto">
+                    <div class="service-card"><div class="icon"></div><h3>General Medicine</h3><p class="muted">Routine checkups & preventive care.</p></div>
+                    <div class="service-card"><div class="icon"></div><h3>Pediatrics</h3><p class="muted">Comprehensive child health services.</p></div>
+                    <div class="service-card"><div class="icon"></div><h3>Dentistry</h3><p class="muted">Dental exams, hygiene & cosmetic.</p></div>
+                    <div class="service-card"><div class="icon"></div><h3>Orthopedics</h3><p class="muted">Bone & joint specialized care.</p></div>
+                    <div class="service-card"><div class="icon"></div><h3>Cardiology</h3><p class="muted">Heart diagnostics & treatment.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials carousel -->
+        <section class="section">
+            <div class="container">
+                <h2>Patient Stories</h2>
+                <div class="carousel" data-auto="true" data-interval="5000">
+                    <div class="carousel-track">
+                        <div class="carousel-slide">
+                            <h3>Sarah K.</h3>
+                            <p>“The doctors truly listened. I felt cared for every step.”</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <h3>Michael R.</h3>
+                            <p>“Modern facility with a warm atmosphere. Highly recommended.”</p>
+                        </div>
+                        <div class="carousel-slide">
+                            <h3>Anita P.</h3>
+                            <p>“Efficient appointment process and excellent pediatric care.”</p>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-btn" data-carousel="prev" aria-label="Previous">‹</button>
+                        <button class="carousel-btn" data-carousel="next" aria-label="Next">›</button>
+                    </div>
+                    <div class="dots" aria-label="Carousel pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ preview -->
+        <section class="section">
+            <div class="container">
+                <h2>Quick Answers</h2>
+                <div class="grid grid-2">
+                    <div class="accordion-item">
+                        <div class="accordion-header">Do you accept walk-ins?</div>
+                        <div class="accordion-body">Yes, for urgent care we accept walk-ins during business hours.</div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header">Are lab results online?</div>
+                        <div class="accordion-body">You can securely access lab results through our patient portal.</div>
+                    </div>
+                </div>
+                <p><a class="btn btn-primary" href="faq.html">View full FAQ</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-grid">
+                <div>
+                    <h3>ClinicCare</h3>
+                    <p>Quality healthcare with compassion and innovation.</p>
+                    <p><strong>Hours:</strong><br>Mon–Sat 8am–8pm<br>Emergency: 24/7</p>
+                </div>
+                <div>
+                    <h4>Departments</h4>
+                    <p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology<br>Dermatology</p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p class="muted">123 Health Ave<br>Cityville<br>(555) 123‑4567<br>info@cliniccare.test</p>
+                </div>
+                <div>
+                    <h4>Links</h4>
+                    <p class="muted"><a href="appointment.html">Book Appointment</a><br><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">© <span id="year"></span> ClinicCare. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

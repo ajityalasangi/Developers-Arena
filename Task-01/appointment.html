@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appointment • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Book an Appointment</h1>
+        <p class="lead">We respond within one business hour for online requests.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container layout">
+        <aside class="sidebar">
+          <div class="side-card"><h3>How it Works</h3><p class="muted">Submit the form. A coordinator confirms availability & finalizes your visit or telehealth session.</p></div>
+          <div class="side-card"><h3>Emergency?</h3><p class="muted">Call (555) 000‑9999 for immediate assistance 24/7.</p></div>
+        </aside>
+        <div class="content">
+          <form id="appointment-form">
+            <h2>Request Form</h2>
+            <div class="field"><label>Full Name</label><input name="name" data-validate placeholder="Jane Doe" /><div class="error"></div></div>
+            <div class="field"><label>Email</label><input name="email" data-validate type="email" placeholder="you@example.com" /><div class="error"></div></div>
+            <div class="field"><label>Phone</label><input name="phone" data-validate placeholder="(555) 555-5555" /><div class="error"></div></div>
+            <div class="field"><label>Department</label>
+              <select name="dept" data-validate>
+                <option value="">Select...</option>
+                <option>Pediatrics</option>
+                <option>Dentistry</option>
+                <option>Orthopedics</option>
+                <option>Cardiology</option>
+              </select>
+              <div class="error"></div>
+            </div>
+            <div class="field"><label>Preferred Date</label><input name="date" data-validate type="date" /><div class="error"></div></div>
+            <div class="field"><label>Message</label><textarea name="msg" rows="4" placeholder="Brief reason for visit"></textarea></div>
+            <p><button class="btn btn-primary" type="submit">Submit Request</button></p>
+            <div class="form-status success" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="services.html">Services</a><br><a href="gallery.html">Gallery</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testimonials • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Patient Testimonials</h1>
+        <p class="lead">Real stories of healing and compassionate care.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="carousel" data-auto="true" data-interval="6500">
+          <div class="carousel-track">
+            <div class="carousel-slide"><h3>“Exceptional Care”</h3><p>From the first call to follow‑up, every staff member was attentive and respectful.</p><p class="muted">— Rachel W.</p></div>
+            <div class="carousel-slide"><h3>“Modern & Friendly”</h3><p>The facility is spotless and the technology made my diagnosis fast.</p><p class="muted">— David K.</p></div>
+            <div class="carousel-slide"><h3>“Great Pediatric Team”</h3><p>My child felt at ease. The doctor explained everything patiently.</p><p class="muted">— Priya S.</p></div>
+            <div class="carousel-slide"><h3>“Efficient Process”</h3><p>Appointment scheduling was smooth and there was minimal waiting time.</p><p class="muted">— Luis M.</p></div>
+          </div>
+          <div class="carousel-nav">
+            <button class="carousel-btn" data-carousel="prev" aria-label="Previous">‹</button>
+            <button class="carousel-btn" data-carousel="next" aria-label="Next">›</button>
+          </div>
+          <div class="dots" aria-label="Carousel pagination"></div>
+        </div>
+        <h2 style="margin-top:3rem;">More Feedback</h2>
+        <div class="grid grid-3">
+          <div class="card pad"><p>“Telehealth session saved me a trip—clear guidance and prescription.”</p><p class="muted">— Janet P.</p></div>
+          <div class="card pad"><p>“Orthopedics rehab plan was personalized and got me back to running.”</p><p class="muted">— Omar F.</p></div>
+          <div class="card pad"><p>“Dental whitening results were fantastic. Zero sensitivity issues.”</p><p class="muted">— Carla T.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

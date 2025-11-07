@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Medical Services</h1>
+        <p class="lead">Explore our comprehensive, integrated care offerings.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container layout">
+        <aside class="sidebar">
+          <div class="side-card">
+            <h3>Filter</h3>
+            <div class="flex" style="flex-wrap:wrap; gap:.5rem;">
+              <button class="pill active" data-filter-btn="all" data-group="svc">All</button>
+              <button class="pill" data-filter-btn="diagnostics" data-group="svc">Diagnostics</button>
+              <button class="pill" data-filter-btn="care" data-group="svc">Care</button>
+              <button class="pill" data-filter-btn="surgery" data-group="svc">Surgery</button>
+            </div>
+          </div>
+          <div class="side-card">
+            <h3>Insurance</h3>
+            <p class="muted">We accept major insurance providers. Contact us for details.</p>
+          </div>
+        </aside>
+        <div class="content" data-filter-target data-group="svc">
+          <div class="grid grid-auto">
+            <article class="service-card" data-item="care"><div class="icon"></div><h3>Primary Care</h3><p class="muted">Preventive and routine checkups.</p></article>
+            <article class="service-card" data-item="diagnostics"><div class="icon"></div><h3>Imaging Center</h3><p class="muted">X‑ray, Ultrasound, MRI.</p></article>
+            <article class="service-card" data-item="diagnostics"><div class="icon"></div><h3>Laboratory</h3><p class="muted">Same‑day blood work and panels.</p></article>
+            <article class="service-card" data-item="care"><div class="icon"></div><h3>Pediatrics</h3><p class="muted">Well‑child visits & vaccinations.</p></article>
+            <article class="service-card" data-item="surgery"><div class="icon"></div><h3>Day Surgery</h3><p class="muted">Minimally invasive procedures.</p></article>
+            <article class="service-card" data-item="care"><div class="icon"></div><h3>Dental Care</h3><p class="muted">Cosmetic & restorative dentistry.</p></article>
+            <article class="service-card" data-item="care"><div class="icon"></div><h3>Orthopedics</h3><p class="muted">Sports injuries & joint care.</p></article>
+            <article class="service-card" data-item="care"><div class="icon"></div><h3>Cardiology</h3><p class="muted">Heart health & monitoring.</p></article>
+          </div>
+          <div class="card pad" style="margin-top:1.5rem;">
+            <h3>Need help choosing?</h3>
+            <p class="muted">Call our care coordinators at <strong>(555) 123‑4567</strong> or <a href="appointment.html">book a consultation</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

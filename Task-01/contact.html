@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>.map-placeholder{background:var(--blue-100); border:1px solid var(--gray-200); height:320px; border-radius:var(--radius); display:grid; place-items:center; font-weight:700; color:var(--blue-700);}</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Get in Touch</h1>
+        <p class="lead">We're here to answer questions and support your care journey.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container layout">
+        <aside class="sidebar">
+          <div class="side-card"><h3>Contact Info</h3><p class="muted">123 Health Ave<br>Cityville<br>(555) 123‑4567<br>info@cliniccare.test</p></div>
+          <div class="side-card"><h3>Working Hours</h3><p class="muted">Mon–Sat: 8am–8pm<br>Sun: Closed<br>Emergency: 24/7</p></div>
+        </aside>
+        <div class="content">
+          <div class="map-placeholder">Map Placeholder</div>
+          <form id="appointment-form" style="margin-top:2rem;">
+            <h2>Message Form</h2>
+            <div class="field"><label>Name</label><input name="name" data-validate placeholder="Your Name" /><div class="error"></div></div>
+            <div class="field"><label>Email</label><input name="email" data-validate type="email" placeholder="you@example.com" /><div class="error"></div></div>
+            <div class="field"><label>Subject</label><input name="subject" data-validate placeholder="Subject" /><div class="error"></div></div>
+            <div class="field"><label>Message</label><textarea name="msg" rows="5" data-validate placeholder="Your message"></textarea><div class="error"></div></div>
+            <p><button class="btn btn-primary" type="submit">Send Message</button></p>
+            <div class="form-status success" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

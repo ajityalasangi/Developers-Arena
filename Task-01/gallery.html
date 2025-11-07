@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Facilities & Moments</h1>
+        <p class="lead">A glimpse of our clinic spaces, labs, and community events.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="gallery" id="gallery">
+          <!-- Using inline SVG placeholders to avoid external dependencies -->
+          <img alt="Lobby" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Lobby</text></svg>">
+          <img alt="Lab" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='1000'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Lab</text></svg>">
+          <img alt="Pediatrics" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='700'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Pediatrics</text></svg>">
+          <img alt="Dental" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='650'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Dental</text></svg>">
+          <img alt="Orthopedics" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='500'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Orthopedics</text></svg>">
+          <img alt="Community" src="data:image/svg+xml;utf8,<?xml version='1.0'?><svg xmlns='http://www.w3.org/2000/svg' width='800' height='900'><rect width='100%' height='100%' fill='%23e0efff'/><text x='50%' y='50%' text-anchor='middle' font-size='36' fill='%231e3a8a' font-family='Segoe UI'>Community</text></svg>">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

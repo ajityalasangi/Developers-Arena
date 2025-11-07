@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departments • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:2.5rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">Departments</h1>
+        <p class="lead">Explore specialized care across our medical departments.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="flex" style="flex-wrap:wrap; gap:.5rem;">
+          <button class="pill active" data-tab-btn="pediatrics" data-group="dept">Pediatrics</button>
+          <button class="pill" data-tab-btn="dentistry" data-group="dept">Dentistry</button>
+          <button class="pill" data-tab-btn="orthopedics" data-group="dept">Orthopedics</button>
+          <button class="pill" data-tab-btn="cardiology" data-group="dept">Cardiology</button>
+        </div>
+        <div class="card pad" data-tab-panel="pediatrics" data-group="dept" style="margin-top:1rem;">
+          <h2>Pediatrics</h2>
+          <p class="muted">Comprehensive care for infants, children, and adolescents including wellness, immunization, and developmental screening.</p>
+          <div class="grid grid-3">
+            <div class="service-card"><h3>Well‑child Clinic</h3><p class="muted">Routine growth monitoring.</p></div>
+            <div class="service-card"><h3>Vaccination</h3><p class="muted">Complete immunization schedule.</p></div>
+            <div class="service-card"><h3>Developmental</h3><p class="muted">Early screening & guidance.</p></div>
+          </div>
+        </div>
+        <div class="card pad" data-tab-panel="dentistry" data-group="dept" style="margin-top:1rem; display:none;">
+          <h2>Dentistry</h2>
+          <p class="muted">From hygiene to cosmetic dentistry and restorative procedures.</p>
+          <div class="grid grid-3">
+            <div class="service-card"><h3>Hygiene</h3><p class="muted">Scaling & polishing.</p></div>
+            <div class="service-card"><h3>Cosmetic</h3><p class="muted">Whitening & veneers.</p></div>
+            <div class="service-card"><h3>Restorative</h3><p class="muted">Fillings & crowns.</p></div>
+          </div>
+        </div>
+        <div class="card pad" data-tab-panel="orthopedics" data-group="dept" style="margin-top:1rem; display:none;">
+          <h2>Orthopedics</h2>
+          <p class="muted">Bone, joint, and sports injury management.</p>
+          <div class="grid grid-3">
+            <div class="service-card"><h3>Sports Medicine</h3><p class="muted">Injury prevention & rehab.</p></div>
+            <div class="service-card"><h3>Arthroscopy</h3><p class="muted">Minimally invasive surgery.</p></div>
+            <div class="service-card"><h3>Physiotherapy</h3><p class="muted">Recovery and mobility.</p></div>
+          </div>
+        </div>
+        <div class="card pad" data-tab-panel="cardiology" data-group="dept" style="margin-top:1rem; display:none;">
+          <h2>Cardiology</h2>
+          <p class="muted">Advanced diagnostics and long‑term heart care.</p>
+          <div class="grid grid-3">
+            <div class="service-card"><h3>ECG & Echo</h3><p class="muted">Accurate diagnostics.</p></div>
+            <div class="service-card"><h3>Holter</h3><p class="muted">24‑hour monitoring.</p></div>
+            <div class="service-card"><h3>Hypertension Clinic</h3><p class="muted">Lifestyle & medication support.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

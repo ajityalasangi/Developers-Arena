@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us • ClinicCare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="logo"></span>ClinicCare</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="departments.html">Departments</a>
+        <a href="appointment.html" class="nav-cta btn btn-primary">Book Now</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" style="padding:3rem 0 1rem;">
+      <div class="container">
+        <h1 class="display">About Our Clinic</h1>
+        <p class="lead">Two decades of patient‑centered medical excellence and innovation.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container layout">
+        <aside class="sidebar">
+          <div class="side-card">
+            <h3>At a Glance</h3>
+            <p class="muted">Founded 2005<br>25+ Specialists<br>Accredited Facility<br>24/7 Emergency</p>
+          </div>
+          <div class="side-card">
+            <h3>Mission</h3>
+            <p class="muted">Deliver compassionate, evidence‑based care with integrity.</p>
+          </div>
+        </aside>
+        <div class="content">
+          <h2>Our Story</h2>
+          <p>ClinicCare began as a small community practice with a vision to integrate preventive medicine, advanced diagnostics, and a culture of compassion. Today we serve thousands of patients across multiple specialties while preserving a human touch.</p>
+          <h2>Values</h2>
+          <div class="grid grid-3">
+            <div class="card pad"><h3>Compassion</h3><p class="muted">Listening first to treat the whole person.</p></div>
+            <div class="card pad"><h3>Innovation</h3><p class="muted">Adopting modern tools for precise diagnosis.</p></div>
+            <div class="card pad"><h3>Integrity</h3><p class="muted">Transparent, ethical clinical decisions.</p></div>
+          </div>
+          <h2>Timeline</h2>
+          <div class="grid" style="--gap:0;">
+            <div class="card pad"><strong>2005</strong><br>Clinic founded with 3 doctors.</div>
+            <div class="card pad"><strong>2012</strong><br>Added Pediatrics & Orthopedics.</div>
+            <div class="card pad"><strong>2018</strong><br>Digital patient portal launched.</div>
+            <div class="card pad"><strong>2024</strong><br>Accredited center of excellence.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div><h3>ClinicCare</h3><p>Quality healthcare with compassion and innovation.</p></div>
+        <div><h4>Departments</h4><p class="muted">Pediatrics<br>Dentistry<br>Orthopedics<br>Cardiology</p></div>
+        <div><h4>Contact</h4><p class="muted">123 Health Ave<br>(555) 123‑4567</p></div>
+        <div><h4>Links</h4><p class="muted"><a href="appointment.html">Book Appointment</a></p></div>
+      </div>
+      <div class="footer-bottom">© <span id="year"></span> ClinicCare</div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
