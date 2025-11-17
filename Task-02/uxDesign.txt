@@ -1,0 +1,10 @@
+writing the stories 
+for admin : 
+    1. as a admin i want to manage the user information such as posts, likes, comment, share.
+    2. as a admin i want to remove harmful content.
+    
+for users :
+    1.As a user, I want to create a post easily.
+    2.As a user, I want to see my feed instantly.
+    3.As a user, I want clear notifications. 
+    etc     
