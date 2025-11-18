@@ -9,11 +9,15 @@ function Navbar() {
 
       {/* Right side buttons */}
       <div className="flex items-center gap-4">
-        <button className="text-gray-700 hover:text-blue-600">Login</button>
+        <a href="/login">
+          <button className="text-gray-700 hover:text-blue-600">Login</button>
+        </a>
 
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
-          Signup
-        </button>
+        <a href="/signup">
+          <button className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+            Signup
+          </button>
+        </a>
       </div>
 
     </nav>

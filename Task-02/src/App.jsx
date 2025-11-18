@@ -6,10 +6,11 @@ import Signup from "./pages/Signup";
 import Profile from "./pages/Profile";
 import Notifications from "./pages/Notifications";
 import CreatePost from "./pages/CreatePost";
+import Dashboard from "./pages/Dashboard";
 function App(){
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
         
 
@@ -20,6 +21,7 @@ function App(){
           <Route path="/profile" element={<Profile/>} />
           <Route path="/notifications" element={<Notifications/>} />
           <Route path="/createpost" element={<CreatePost/>}/>
+          <Route path="/dashboard" element={<Dashboard/>}/>
         </Routes>
       </main>
     </>
